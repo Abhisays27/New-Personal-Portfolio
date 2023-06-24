@@ -8,20 +8,20 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0" data-aos="zoom-in">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="primary-header">Rahul Jha</span> from Darbhanga, Bihar, India. I am a computer science graduate and a passionate programmer.
+            Hi Everyone, I am <span className="primary-header">Abhishek Nautiyal</span> from Dehradun, India. I am a pre-final student currently pursuing B.Tech at NIT Hamirpur.
             <br />
             <br />
-            In addition to coding, here are some other things I enjoy doing!
+            In addition to exploring tech world, here are some other things I enjoy doing!
           </p>
           <ul>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Writing Tech Blogs
+              <AiOutlineArrowRight /> Playing basketball and Table-Tennis
             </li>
             <li className="about-activity">
               <AiOutlineArrowRight /> Reading Books
             </li>
             <li className="about-activity">
-              <AiOutlineArrowRight /> Playing Games
+              <AiOutlineArrowRight /> Cycling
             </li>
             <li className="about-activity">
               <AiOutlineArrowRight /> Traveling

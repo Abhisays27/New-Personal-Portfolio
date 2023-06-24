@@ -21,14 +21,15 @@
   --shadow: rgb(100, 100, 111) 0px 7px 29px 0px;
 }
 
+
 .dark {
-  --clr-bg: #0a192f;
-  --clr-bg-alt: #0a192f;
+  --clr-bg: #121212;
+  --clr-bg-alt: #121212;
 
   --clr-txt: #eeeeee;
   --clr-primary: #83c9ff;
-  --clr-border: #0a192f;
-  --clr-nav: #272f2b;
+  --clr-border:#121212;
+  --clr-nav: #121212;
   --shadow: rgba(0, 0, 0, 0.558) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }

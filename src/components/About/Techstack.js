@@ -12,8 +12,14 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiRedux,
+  SiExpress,
+  SiTypescript,
+ 
   SiMaterialui,
+  
 } from "react-icons/si";
+import {  BsFillBootstrapFill } from "react-icons/bs";
+
 
 function Techstack() {
   return (
@@ -25,11 +31,17 @@ function Techstack() {
         <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
+       <Col xs={4} md={2} className="tech-icons">
+        <BsFillBootstrapFill />
+      </Col> 
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
@@ -37,8 +49,12 @@ function Techstack() {
         <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>

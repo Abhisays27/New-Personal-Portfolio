@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    
+   
     <div className={`${themename} app`}>
       <Router>
         <Preloader load={load} />
@@ -48,6 +49,7 @@ function App() {
         </div>
       </Router>
     </div>
+    
   );
 }
 

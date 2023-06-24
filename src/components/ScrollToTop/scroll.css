@@ -24,11 +24,7 @@
   }
 }
 
-.scroll-up:hover {
-  color: var(--clr-primary);
-  transition: 0.5s;
-  animation: none;
-}
+
 
 @media (max-width: 570px) {
   .scroll-up {
