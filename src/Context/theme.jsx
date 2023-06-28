@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 const ThemeContext = React.createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [themename, setthemename] = useState("light");
+  const [themename, setthemename] = useState("dark");
   const toggeltheme = () => {
-    themename === "light" ? setthemename("dark") : setthemename("light");
+    themename === "dark" ? setthemename("light") : setthemename("dark");
   };
 
   return (

@@ -23,7 +23,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                <strong className="main-name"> Abhishek Nautiyal</strong>
+                <strong className="main-name font2"> Abhishek Nautiyal</strong>
               </h1>
 
               <div style={{ padding: 30 }} className="type">

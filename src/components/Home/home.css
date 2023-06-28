@@ -6,6 +6,8 @@
   display: inline-block;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -33,6 +35,15 @@
   }
 }
 
+.font1{
+  font-family: 'Cormorant Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+.font2{
+  
+  font-family: 'Raleway', sans-serif;
+}
 .home-header {
   padding-top: 80px !important;
 }
@@ -70,10 +81,14 @@
   color: var(--clr-primary) !important;
   font-weight: 600 !important;
   padding-left: 25px;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: var(--clr-primary) !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -94,6 +109,8 @@
   .Typewriter__wrapper {
     font-size: 1.3em !important;
     padding: 0px !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
   }
   .Typewriter__cursor {
     font-size: 1.5em !important;
@@ -118,6 +135,8 @@
     text-align: center !important;
     font-size: 1.2em !important;
     font-weight: 400 !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
   }
 

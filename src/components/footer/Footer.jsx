@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
+import "../Home/home.css";
 
 function Footer() {
   return (
@@ -15,9 +16,9 @@ function Footer() {
       <Row>
         <Col md="4" className="footer-copywright"></Col>
         <Col md="4" className="footer-copywright">
-          <span>
-            Designed and Developed with 💓 by{" "}
-            <i className="primary-header">Abhishek Nautiyal</i>
+          <span className="font1">
+            Designed and Developed with ❤️ by{" "}
+            <b className="primary-header font1">Abhishek Nautiyal</b>
           </span>
         </Col>
         <Col md="4" className="footer-body">

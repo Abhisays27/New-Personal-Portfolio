@@ -15,34 +15,34 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={8} className="home-about-description ">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-              <span className="primary-header"> ABOUT </span> ME
+              <span className="primary-header font1"> ABOUT </span>  <span className="font1">ME</span>
             </h1>
-            <p className="home-about-body" data-aos="fade-up">
+            <p className="home-about-body font2" data-aos="fade-up">
               <br />
-              I'm a pre-final student persuading Btech in ECE from <i className="primary-header">
+             I'm a pre-final student persuading Btech in ECE from <span className="primary-header">
                NIT Hamirpur
-              </i>{" "}
+              </span>{" "}
               who loves solving problems and building Websites.
               <br />
               <br />I am passionate about{" "}
-              <i className="primary-header">technologies</i> and love to learn
+              <span className="primary-header">technologies</span> and love to learn
               new things.
               <br />
               <br />I am more interested in building new
-              <i>
-                <i className="primary-header">Web Technologies and Products.</i>
-              </i>
+              <span>
+                <span className="primary-header"> Web Technologies and Products.</span>
+              </span>
               <br />
               <br />I always apply my experience in developing products with{" "}
-              <i className="primary-header">Node.js</i> and Modern Javascript
+              <span className="primary-header">Node.Js</span> and Modern Javascript
               Library and Framework like
-              <i className="primary-header"> React.Js.</i>and  <i className="primary-header">Next.Js</i>
+              <span className="primary-header"> React.Js </span>and  <span className="primary-header">Next.Js</span>
               <br />
               <br />
               Currently expanding my portfolio by building more{" "}
-              <i className="primary-header">projects </i> that I can add
+              <span className="primary-header">projects </span> that I can add
               here.
             </p>
           </Col>
@@ -60,9 +60,9 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1 data-aos="fade-right">
-              <span className="primary-header">CONNECT </span> WITH ME
+              <span className="primary-header font1">CONNECT </span > <span className="font1">WITH ME</span>
             </h1>
-            <p data-aos="fade-left">Feel free to connect with me</p>
+            <p data-aos="fade-left" className="font1">Feel free to connect with me</p>
             <ul className="home-about-social-links" data-aos="fade-up">
               <li className="social-icons">
                 <a

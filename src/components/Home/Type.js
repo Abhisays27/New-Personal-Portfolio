@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+
 function Type() {
   return (
     <Typewriter
@@ -9,7 +10,7 @@ function Type() {
           "Full Stack Web Developer",
           " Pre Final Student",
           "Open Source Contributor",
-          "Sports Enthusiastic"
+          "NCC Cadet"
         ],
         autoStart: true,
         loop: true,
