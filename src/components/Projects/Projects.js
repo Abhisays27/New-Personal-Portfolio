@@ -2,11 +2,20 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import ProjectCard from "./ProjectCards";
-
+import techno from "../../Assets/Projects/technotweets.png"
 import PrivateChat from "../../Assets/Projects/PrivateChat.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
 import Ecart from "../../Assets/Projects/ecart.png";
 import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
+import Carhub from "../../Assets/Projects/carshowcase.png";
+import Company from "../../Assets/Projects/company69.png";
+import Todo from "../../Assets/Projects/todo.png";
+import Expense from "../../Assets/Projects/expense.png";
+import Tictac from "../../Assets/Projects/tictac.png";
+import Youare from "../../Assets/Projects/youarenotalone.png";
+import Recipe from "../../Assets/Projects/recipeapp.png";
+import mern from "../../Assets/Projects/auth.png";
+import Buisness from "../../Assets/Projects/buisness.png";
 import "../Home/home.css"
 
 import "./project.css";
@@ -22,11 +31,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={Ecart}
-              title="E Cart"
-              description="This is a fully functional eCommerce website that uses React.js + MUI and CSS in the front end and NodeJs and express js in backend and MongoDb as Database."
-              ghLink="https://github.com/rahuljha4171/E-cart"
-              demoLink="https://ecart.onrender.com/"
+              imgPath={techno}
+              title="Techno Tweets"
+              description="This website is a thought-sharing platform featuring a Google-authenticated signin and logout function, as well as various features such as an edit and searchbar built with Next.js and mongoDB "
+              ghLink="https://github.com/Abhisays27/TechnoTweets"
+              demoLink="https://abhisheknautiyal.vercel.app/"
             />
           </Col>
 
@@ -35,27 +44,99 @@ function Projects() {
               imgPath={Portfolio}
               title="Portfolio Website"
               description="My personal Portfolio Website build with React and Bootstrap. It is fully responsive website which supports both dark and light mode."
-              ghLink="https://github.com/rahuljha4171/Portfolio-Website"
-              demoLink="https://rahuljha.tech/"
+              ghLink="https://github.com/Abhisays27/New-Personal-Portfolio"
+              demoLink="abhisheknautiyal.vercel.app/"
             />
           </Col>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={PrivateChat}
-              title="Private Chat"
-              description="A Personal Chat Application to share resources and hangout with friends build with react.js, css, and Firebase. Have features which allows user for realtime messaging, image sharing and search user."
-              ghLink="#"
-              demoLink="https://chat-app-rahuljha4171.vercel.app/"
+              imgPath={Carhub}
+              title="Car Hub"
+              description="A car rental website with a combobox and filter section that uses Google authentication and a Rapid API made with Next js and Typescript."
+              ghLink="https://github.com/Abhisays27/Carshowcase-App"
+              
             />
           </Col>
 
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={ExpenseTracker}
-              title="Expense Tracker"
-              description="An online expense tracker using React, Node, Express, and MongoDB as the database. It allows you to keep track of your expenses, investments, and savings. All past transactions are listed, and you can also delete them. "
-              ghLink="https://github.com/rahuljha4171/Expense-Tracker"
-              demoLink="https://expense-tracker.rahuljha4171.vercel.app/"
+              imgPath={Expense}
+              title="Expense App"
+              description="An online expense tracker using React. It allows you to keep track of your expenses and savings. "
+              ghLink="https://github.com/Abhisays27/Expense-React-App"
+              demoLink="https://abhisays27.github.io/Expense-React-App/"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Youare}
+              title="You Are Not Alone"
+              description="This website allows users to share and learn about other people's mental health experiences and solutions. It also has a chatbot that allows customers to have anonymous real-time conversations. "
+              ghLink="https://github.com/Abhisays27/YouAreNotAloneHere"
+              demoLink="https://devfolio.co/projects/you-are-not-alone-2c03"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Buisness}
+              title="business Website"
+              description="A stunning single-page business frontend website built with React and Tailwind CSS. "
+              ghLink="https://github.com/Abhisays27/React-Buisness-Project"
+              demoLink="https://buisnesswebsite.netlify.app/#home"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Recipe}
+              title="Recipe App"
+              description="A fully JWT-authenticated app that allows you to upload your recipe to your user profile, search for other recipes, and delete them.Built with react, express, and MongoDB. "
+              ghLink="https://github.com/Abhisays27/Mern-Recipe-App"
+             
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Company}
+              title="Company 69"
+              description="A beautiful single-page frontend website built with React and Tailwind CSS. "
+              ghLink="https://github.com/Abhisays27/Company69"
+              demoLink="https://vercel.com/abhisays27/company69/CN3tvUtymi5cud1h3RTvobG1ZfHo"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={mern}
+              title="MERN Authentication"
+              description="a fully authenticated app with signin and login features that includes a cookie parser, password hashing, and JWT tokens made with the MERN stack "
+              ghLink="https://github.com/Abhisays27/MERN-Authentication"
+              demoLink="https://mern-authentication-nnnu.onrender.com/"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Todo}
+              title="TODO App"
+              description="A web app built with react and firebase to track your daily to-do list. "
+              ghLink="https://github.com/Abhisays27/Todo-React-App"
+              demoLink="https://todoappabhi.netlify.app/"
+            />
+          </Col>
+
+         
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={Tictac}
+              title="Tic-Tac-Toe"
+              description="This is a simple online tic tac toe game built with html, CSS, and javascript. "
+              ghLink="https://github.com/Abhisays27/Tic-Tac-Toe"
+              demoLink="https://abhisays27.github.io/Tic-Tac-Toe/"
             />
           </Col>
         </Row>
