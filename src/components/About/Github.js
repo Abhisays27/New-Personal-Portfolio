@@ -65,7 +65,7 @@ function Github() {
 
       <div className="gitStats">
       <img 
-      src={`https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Abhisays27&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1`}
+      src={`https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Abhisays27&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1`}
           style={{ height: statsHeight }} // Dynamically set the height
           alt="stats graph"
            

@@ -7,6 +7,7 @@ import PrivateChat from "../../Assets/Projects/PrivateChat.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
 import Ecart from "../../Assets/Projects/ecart.png";
 import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
+import "../Home/home.css"
 
 import "./project.css";
 
@@ -14,10 +15,10 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <h1 className="project-heading">
+        <h1 className="project-heading font1">
           My Recent <strong className="Fluorescent-Blue">Works </strong>
         </h1>
-        <p>Here are a few projects I've worked on recently.</p>
+        <p className="font1">Here are a few projects I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard

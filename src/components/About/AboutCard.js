@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import "../Home/home.css"
 
 function AboutCard() {
   return (
     <Card className="quote-card-view ">
       <Card.Body>
-        <blockquote className="blockquote mb-0" data-aos="zoom-in">
+        <blockquote className="blockquote mb-0 font2" data-aos="zoom-in">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="primary-header">Abhishek Nautiyal</span> from Dehradun, India. I am a pre-final student currently pursuing B.Tech at NIT Hamirpur.
             <br />
