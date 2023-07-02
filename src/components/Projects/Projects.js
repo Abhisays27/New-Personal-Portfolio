@@ -16,6 +16,8 @@ import Youare from "../../Assets/Projects/youarenotalone.png";
 import Recipe from "../../Assets/Projects/recipeapp.png";
 import mern from "../../Assets/Projects/auth.png";
 import Buisness from "../../Assets/Projects/buisness.png";
+
+
 import "../Home/home.css"
 
 import "./project.css";
@@ -25,9 +27,9 @@ function Projects() {
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading font1">
-          My Recent <strong className="Fluorescent-Blue">Works </strong>
+          My Recent <strong className="Fluorescent-Blue primary-header">Works </strong>
         </h1>
-        <p className="font1">Here are a few projects I've worked on recently.</p>
+        <p className="font1">Here are a few <span className="primary-header">projects</span> I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
@@ -81,7 +83,7 @@ function Projects() {
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={Buisness}
-              title="business Website"
+              title="Business Website"
               description="A stunning single-page business frontend website built with React and Tailwind CSS. "
               ghLink="https://github.com/Abhisays27/React-Buisness-Project"
               demoLink="https://buisnesswebsite.netlify.app/#home"
@@ -112,7 +114,7 @@ function Projects() {
             <ProjectCard
               imgPath={mern}
               title="MERN Authentication"
-              description="a fully authenticated app with signin and login features that includes a cookie parser, password hashing, and JWT tokens made with the MERN stack "
+              description="A fully authenticated app with signin and login features that uses a cookie parser, password hashing, and JWT tokens made with the MERN stack and Redux "
               ghLink="https://github.com/Abhisays27/MERN-Authentication"
               demoLink="https://mern-authentication-nnnu.onrender.com/"
             />

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+
+
+import "../Home/home.css";
+
+
+
 import "../Home/home.css"
 
 function ProjectCards(props) {
@@ -10,8 +16,8 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title className="font3 primary-header">{props.title}</Card.Title>
+        <Card.Text style={{ textAlign: "justify" }} className="font2">
           {props.description}
         </Card.Text>
         <Button variant="primary" href={props.ghLink} target="_blank">

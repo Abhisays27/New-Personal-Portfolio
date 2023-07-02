@@ -89,3 +89,12 @@
   font-weight: 500 !important;
   padding-top: 10px !important;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust the height as needed */
+}
+
+

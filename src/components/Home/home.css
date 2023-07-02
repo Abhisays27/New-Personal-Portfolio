@@ -8,6 +8,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -43,6 +45,10 @@ font-family: 'Montserrat', sans-serif;
 .font2{
   
   font-family: 'Raleway', sans-serif;
+}
+
+.font3{
+  font-family: 'Roboto Mono', monospace;
 }
 .home-header {
   padding-top: 80px !important;
