@@ -1,59 +1,42 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import "./resume.css";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import React from "react";
+import { Container } from "react-bootstrap";
+import resumePDF from "../../Assets/abhishekResume.pdf";
+import "../Resume/resume.css"
 
-const resumeLink =
-  "https://raw.githubusercontent.com/rahuljha4171/Portfolio-Website/c35fd111fd8c2beb9e2c243905aea24503bda9b3/src/Assets/Rahul%20Jha%20Resume.pdf";
+import "../Home/home.css";
 
-function ResumeNew() {
-  const [width, setWidth] = useState(1200);
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
-
+function Resume() {
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href="https://raw.githubusercontent.com/rahuljha4171/Portfolio-Website/c35fd111fd8c2beb9e2c243905aea24503bda9b3/src/Assets/Rahul%20Jha%20Resume.pdf"
-            target="_blank"
-            style={{ maxWidth: "250px" }}
+    <Container fluid className="resume-section">
+      <Container>
+        <h1 className="resume-heading font1">My <span className="primary-header">Resume</span></h1>
+        <p className="resume-description font1">
+          Here you can view and download my resume.
+        </p>
+        <div className="resume-viewer">
+          <object
+            data={resumePDF}
+            type="application/pdf"
+            width="90%"
+            height="1000px"
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-
-        <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href="https://raw.githubusercontent.com/rahuljha4171/Portfolio-Website/c35fd111fd8c2beb9e2c243905aea24503bda9b3/src/Assets/Rahul%20Jha%20Resume.pdf"
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
-        <ScrollToTop />
+            <p>
+              Your browser does not support embedded PDFs. Please{" "}
+              <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+                download the PDF
+              </a>{" "}
+              to view it.
+            </p>
+          </object>
+        </div>
+        <div className="resume-download">
+          <a href={resumePDF} target="_blank" rel="noopener noreferrer" download>
+            Download Resume
+          </a>
+        </div>
       </Container>
-    </div>
+    </Container>
   );
 }
 
-export default ResumeNew;
+export default Resume;
