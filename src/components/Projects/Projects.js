@@ -37,7 +37,7 @@ function Projects() {
               title="Techno Tweets"
               description="This website is a thought-sharing platform featuring a Google-authenticated signin and logout function, as well as various features such as an edit and searchbar built with Next.js and mongoDB "
               ghLink="https://github.com/Abhisays27/TechnoTweets"
-              demoLink="https://abhisheknautiyal.vercel.app/"
+              demoLink="https://technotweets.vercel.app/"
             />
           </Col>
 
@@ -103,7 +103,7 @@ function Projects() {
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={Company}
-              title="Company 69"
+              title="Grow With Data"
               description="A beautiful single-page frontend website built with React and Tailwind CSS. "
               ghLink="https://github.com/Abhisays27/Company69"
               demoLink="https://vercel.com/abhisays27/company69/CN3tvUtymi5cud1h3RTvobG1ZfHo"
