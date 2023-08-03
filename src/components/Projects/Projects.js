@@ -5,8 +5,6 @@ import ProjectCard from "./ProjectCards";
 import techno from "../../Assets/Projects/technotweets.png"
 import PrivateChat from "../../Assets/Projects/PrivateChat.png";
 import Portfolio from "../../Assets/Projects/Portfolio.png";
-import Ecart from "../../Assets/Projects/ecart.png";
-import ExpenseTracker from "../../Assets/Projects/ExpenseTracker.png";
 import Carhub from "../../Assets/Projects/carshowcase.png";
 import Company from "../../Assets/Projects/company69.png";
 import Todo from "../../Assets/Projects/todo.png";
@@ -16,6 +14,8 @@ import Youare from "../../Assets/Projects/youarenotalone.png";
 import Recipe from "../../Assets/Projects/recipeapp.png";
 import mern from "../../Assets/Projects/auth.png";
 import Buisness from "../../Assets/Projects/buisness.png";
+import coursify from "../../Assets/Projects/coursify.png"
+import udemo from "../../Assets/Projects/udemo.png"
 
 
 import "../Home/home.css"
@@ -31,6 +31,24 @@ function Projects() {
         </h1>
         <p className="font1">Here are a few <span className="primary-header">projects</span> I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={udemo}
+              title="Udemo"
+              description="This is a ultimate video course sharing platform like udemy having free and premium course, made with Next.js and authenticated using Supabase"
+              ghLink="https://github.com/Abhisays27/Udemo"
+              demoLink="https://udemo-ogm4j4izs-abhisays27.vercel.app/"
+            />
+          </Col>
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={coursify}
+              title="Coursify Connect"
+              description=" A portal used for Hiring software engineers, Product Managers, Data Scientist etc "
+              ghLink="https://github.com/Abhisays27/CoursifyConnect"
+              demoLink="https://coursify-connect.vercel.app/"
+            />
+          </Col>
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={techno}
