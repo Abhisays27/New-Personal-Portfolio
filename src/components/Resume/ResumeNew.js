@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import resumePDF from "../../Assets/finalResume.pdf";
+import resumePDF from "../../Assets/AbhishekN_Resume.pdf";
 import "../Resume/resume.css"
 
 import "../Home/home.css";

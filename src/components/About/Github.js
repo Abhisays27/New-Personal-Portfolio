@@ -6,13 +6,12 @@ function Github() {
   const [showLastHalfYear, setShowLastHalfYear] = useState(false);
   const [statsHeight, setStatsHeight] = useState(180);
 
-
-  const selectLastHalfYear = contributions => {
+  const selectLastHalfYear = (contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
     const shownMonths = 6;
 
-    return contributions.filter(activity => {
+    return contributions.filter((activity) => {
       const date = new Date(activity.date);
       const monthOfDay = date.getMonth();
 
@@ -26,15 +25,17 @@ function Github() {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowLastHalfYear(window.matchMedia("(max-width: 768px)").matches);
       const windowWidth = window.innerWidth;
-      if (windowWidth <= 768) { // Adjust the breakpoint to fit your needs
-        setStatsHeight(130); // Set the desired height for smaller screens
-      } else {
-        setStatsHeight(170); // Default height for larger screens
-      }
-     
+      const isSmallScreen = windowWidth <= 768;
+
+      setShowLastHalfYear(isSmallScreen);
+
+      // Dynamically set the height based on window width
+      setStatsHeight(isSmallScreen ? 130 : 170);
     };
+
+    // Initial resize
+    handleResize();
 
     // Attach the event listener for window resize
     window.addEventListener("resize", handleResize);
@@ -64,12 +65,11 @@ function Github() {
       </div>
 
       <div className="gitStats">
-      <img 
-      src={`https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Abhisays27&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1`}
-          style={{ height: statsHeight }} // Dynamically set the height
+        <img
+          src={`https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Abhisays27&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1`}
+          style={{ height: statsHeight, width: "100%" }}
           alt="stats graph"
-           
-          />
+        />
       </div>
     </Row>
   );
