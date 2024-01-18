@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazy-load';
 import { Container, Row, Col } from "react-bootstrap";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import ProjectCard from "./ProjectCards";
@@ -33,6 +34,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={6} lg={4} className="project-card">
             <ProjectCard
+            
               imgPath={udemo}
               title="Udemo"
               description="This is a ultimate video course sharing platform like udemy having free and premium course, made with Next.js and authenticated using Supabase"

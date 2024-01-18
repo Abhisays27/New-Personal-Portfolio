@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import LazyLoad from 'react-lazy-load';
 
 
 import "../Home/home.css";
@@ -14,7 +15,10 @@ import "../Home/home.css"
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+       <LazyLoad >
+       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    </LazyLoad>
+      
       <Card.Body>
         <Card.Title className="font3 primary-header">{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }} className="font2">
