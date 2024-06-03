@@ -21,7 +21,7 @@ function Home2() {
             </h1>
             <p className="home-about-body font2" data-aos="fade-up">
               <br />
-             I'm a pre-final student persuading Btech in ECE from <span className="primary-header">
+             I'm a final student persuading Btech in ECE from <span className="primary-header">
                NIT Hamirpur
               </span>{" "}
               who loves solving problems and building Websites.
