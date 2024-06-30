@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
 import "../Home/home.css";
@@ -81,6 +82,18 @@ function Footer() {
                 aria-label="instagram"
               >
                 <AiFillInstagram />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                style={{ color: `var(--clr-primary)` }}
+                className="leetcode"
+                href="https://leetcode.com/u/1abhishek123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram"
+              >
+               <SiLeetcode />
               </a>
             </li>
           </ul>

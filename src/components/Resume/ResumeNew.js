@@ -5,7 +5,7 @@ import { Worker } from '@react-pdf-viewer/core';
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import packageJson from '../../../package.json';
-import resumePDF from "../../Assets/AbhishekN_Resume.pdf";
+import resumePDF from "../../Assets/Resume 2024.pdf";
 import "../Resume/resume.css";
 import "../Home/home.css";
 
