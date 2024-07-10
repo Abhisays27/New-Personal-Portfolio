@@ -23,6 +23,7 @@ import NITHSays from "../../Assets/Projects/NITHSays.png"
 import "../Home/home.css"
 
 import "./project.css";
+//
 
 function Projects() {
   return (
