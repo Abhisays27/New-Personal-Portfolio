@@ -17,6 +17,7 @@ import mern from "../../Assets/Projects/auth.png";
 import Buisness from "../../Assets/Projects/buisness.png";
 import coursify from "../../Assets/Projects/coursify.png"
 import udemo from "../../Assets/Projects/udemo.png"
+import NITHSays from "../../Assets/Projects/NITHSays.png"
 
 
 import "../Home/home.css"
@@ -32,6 +33,16 @@ function Projects() {
         </h1>
         <p className="font1">Here are a few <span className="primary-header">projects</span> I've worked on recently.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+            
+              imgPath={NITHSays}
+              title="NITHSays"
+              description="A social media platform for NITH students to share their thoughts, connect with peers, and stay updated with campus news!"
+              ghLink="https://github.com/Abhisays27/NITH-Says"
+              demoLink="https://nith-says.vercel.app/"
+            />
+          </Col>
         <Col md={6} lg={4} className="project-card">
             <ProjectCard
             
